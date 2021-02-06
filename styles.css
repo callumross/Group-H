@@ -1,3 +1,11 @@
 body{
     background-color: cornflowerblue;
 }
+
+header{
+    background-color: fuchsia;
+}
+
+h1{
+    text-decoration: chartreuse;
+}
