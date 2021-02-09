@@ -1,6 +1,7 @@
 @import "templatecolours.css";
 
 .nav-wrapper {
+    list-style-type:none;
     display: flex;
     justify-content: space-between;
     padding: 38px;
