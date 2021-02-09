@@ -1,22 +1,5 @@
 @import "templatecolours.css";
 
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 38px;
-}
-
-.left-side {
-    display: flex;
-
-}
-
-.nav-wrapper > .left-side > div {
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
-}
-
 body{
     max-width: 300px;
     margin-left: auto;
