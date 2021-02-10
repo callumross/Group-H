@@ -17,10 +17,9 @@
     text-transform: uppercase;
 }
 
-head{
+body{
     max-width: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
 }
 /*NAVIGATION BAR CSS*/
 nav>ul{
