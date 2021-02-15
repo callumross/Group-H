@@ -12,6 +12,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <img id="banner" src="assets/images/banner.JPG" alt="BANNER"/>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css">
 </head>
 <body>
 <img id="logo" src="assets/images/logo.JPG" alt="MAKE SOMEONE SMILE"/>
@@ -26,9 +29,7 @@
                 <li><a href="signup.html">Sign up page</a></li>
             </ul>
         </div> 
-        <img id="banner" src="assets/images/banner.JPG" alt="BANNER"/>
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css">
+        
     <header><h1>Welcome to the SwapApp</h1></header>
 
     <h2>The following username and password combinations work</h2>
