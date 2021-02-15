@@ -3,9 +3,22 @@ body{
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    border: thick;
+    border-color: black;
+    border-style: solid;
+    border-radius: auto;
 }
 header {
-    max-width: 960px;    
+    max-width: 960px; 
+    background-color: lightblue;
+    height: 200px;
+    width: 300px;
+    padding-left: 30px;
+    padding-top: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    object-fit: fill;   
 }
 /* NAVIGATION BAR CSS */
 #quicklinks>ul {
@@ -29,16 +42,28 @@ header {
     width: 300px;
 }
 #banner {
-    width: 960px;
+    width: 935px;
+    padding: 10px;
+    border: 10px;
+    margin: auto;
+    padding-left: auto;
+    padding-top: auto;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    object-fit: contain;
 }
 #Donate1 {
-    width: 200px;
+    height: 350px;
+    width: 300px;
+    float: left;
 }
 /*TEXT STYLING*/
 h1 {
     font-family: 'roboto' sans-serif; 
     font-weight: 300;
     color: lightgrey;
+    position: static;
 }
 h2,p {
     font-family: 'roboto' sans-serif;
@@ -68,4 +93,10 @@ aside {
 }
 main {
     padding-right: 0;
+}
+footer {
+    background-color: blue;
+}
+aside p,h3,h4 {
+    color: white;
 }
