@@ -23,6 +23,8 @@
         <li>Username = Keith, Password = password</li>
     </ul>
 
+    <p><a href="Index.html">Back to home page</a></p>
+
     <form action="loginCheck.php" method="POST" id="login">
         <div>
             <label for="username">Username:</label>

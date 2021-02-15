@@ -16,6 +16,7 @@
     <header><h1>It works</h1></header>
     <?php echo "Hello {$_SESSION["username"]}" ?>
     <p><a href="logout.php">Click here to log out</a></p>
+    <p><a href="Index.html">Back to home page</a></p>
 </body>
 </html>
 
