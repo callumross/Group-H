@@ -20,7 +20,7 @@
 <img id="logo" src="assets/images/logo.JPG" alt="MAKE SOMEONE SMILE"/>
         <div id="quicklinks">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="Index.html">Home</a></li>
                 <li><a href="#">Donate&Receive</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Suggestions</a></li>
@@ -38,8 +38,6 @@
         <li>Username = Dave, Password = thekey</li>
         <li>Username = Keith, Password = password</li>
     </ul>
-
-    <p><a href="Index.html">Back to home page</a></p>
 
     <form action="loginCheck.php" method="POST" id="login">
         <div>
