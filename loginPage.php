@@ -30,7 +30,7 @@
             </ul>
         </div> 
         
-    <header><h1>Welcome to the SwapApp</h1></header>
+    <header><h1 style="color:black;">Welcome to the SwapApp</h1></header>
 
     <h2>The following username and password combinations work</h2>
     <ul>
