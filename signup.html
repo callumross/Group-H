@@ -5,7 +5,7 @@
         <img id="logo" src="assets/images/logo.JPG" alt="MAKE SOMEONE SMILE"/>
         <div id="quicklinks">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Donate&Receive</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Suggestions</a></li>
@@ -31,52 +31,42 @@
             <h2>SIGN UP</h3>
 
                 <p><a href="Index.html">Back to home page</a></p>
-        <form name="signup" id="signup" method="POST">
-            <div>
-                <label for="username">Username</label>
-                <input type="text" name ="username" id="username">
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-            </div>
-            <div>
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" name = "confirmPassword "id="confirmPassword">
-            </div>
-            <div>
-                <label for="firstname">First Name</label>
-                <input type="text" name="firstname" id="firstname">
-            </div>
-            <div>
-                <label for="lastname">Last Name</label>
-                <input type="text" name="lastname" id="lastname">
-            </div>
-            <div>
-                <label>Contact Number</label>
-                <input type="tel" name="contactNumber" id="contactNumber">
-            </div>
-            <div>
-                <label for="country">Country</label>
-                <select name="country" id="country">
-                    <option value="">Select Country</option>
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="india">India</option>
-                    <option value="nigeria">Nigeria</option>
-                    <option value="United Kingdom">United Kingdom</option>
-                    <option value="usa">United State of America</option>
-                    <option value="zimbabwe">ZImbabwe</option>
-                </select>
-            </div>
-            <div>
-                <label for="postcode">Postcode</label>
-                <input type="text" name="postcode" id="postcode">
-            </div>
-            <div>
-                <input type="submit" value = "Submit">
-            </div>
-        </form>
+
+                <form action="/action_page.php">
+                    <form name="signup" id="signup" method="POST">                  
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password"><br><br>
+                    <label for="password">Confirm password:</label><br>
+                    <input type="password" id="password" name="password"><br><br>
+                    <label for="firstname">First Name:</label><br>
+                    <input type="text" id="firstname" name="firstname"><br><br>
+                    <label for="lastname">Last Name:</label><br>
+                    <input type="text" id="lastname" name="lastname"><br><br>
+                    <label for="emailaddress">Email Address:</label><br>
+                    <input type="email" id="emailaddress" name="emailaddress"><br><br>
+                    <label for="emailaddress">Confirm Email Address:</label><br>
+                    <input type="email" id="emailaddress" name="emailaddress"><br><br>
+                    <label for="Phonenumber">Phone Number:</label><br>
+                    <input type="tel" id="Phonenumber" name="Phonenumber"><br><br>
+                     <label for="country">Country</label><br>
+                        <div class="select">   
+                            <select id="country">
+                                <option value="Select Country">Select Country</option>
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="india">India</option>
+                                <option value="nigeria">Nigeria</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="usa">United State of America</option>
+                                <option value="zimbabwe">ZImbabwe</option>
+                            </select>
+                        </div><br><br>
+                    <label for="Postcode">Post Code:</label><br>
+                    <input type="text" id="Postcode" name="Postcode"><br><br>
+                    <input type="submit" value="Submit">
+                </form> 
         </main>
         <!--START OF FOOTER-->
         <footer>
