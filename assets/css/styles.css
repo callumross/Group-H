@@ -53,6 +53,13 @@ header {
     border-width: 5px;
     object-fit: contain;
 }
+form {
+   align-items: flex-end;
+background:none;
+width: 500px;
+justify-items: first baseline;
+object-position: left;
+}
 #contact {
     background-color: lightblue;
     height: 200px;
