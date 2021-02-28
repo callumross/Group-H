@@ -12,11 +12,12 @@ if(!isSet($_POST)){
     $lastName = $_POST["lastName"];
     $username = $_POST["username"];
     $password = $_POST["password"];
+    $email = $_POST["email"];
     $postCode = $_POST["postCode"];
     $contactNumber = $_POST["contactNumber"];
     
     // Run sql query to add information to database
-    $sql_query = "INSERT INTO users (firstName,lastName,username,password,postCode,contactNumber) VALUES ('$firstName','$lastName','$username','$password','$postCode','$contactNumber')";
+    $sql_query = "INSERT INTO users (firstName,lastName,username,password,email,postCode,contactNumber) VALUES ('$firstName','$lastName','$username','$password','$email','$postCode','$contactNumber')";
 
     // If the query is succesfull nothing happens, else echo an error message
     if(mysqli_query($db,$sql_query)){
