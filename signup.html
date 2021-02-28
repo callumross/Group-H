@@ -30,74 +30,31 @@
         <main>
             <h2>SIGN UP</h3>
 
-                <p><a href="Index.html">Back to home page</a></p>
-
+                <!--Sign up form-->
                 <form action="signUpUsers.php" method="POST">
-                    <form name="signup" id="signup" method="POST">                  
-                    <label for="username">Username:</label><br>
-                    <input type="text" id="username" name="username"><br><br>
-                    <label for="password">Password:</label><br>
-                    <input type="password" id="password" name="password"><br><br>
-                    <label for="password">Confirm password:</label><br>
-                    <input type="password" id="password" name="password"><br><br>
-                    <label for="firstname">First Name:</label><br>
-                    <input type="text" id="firstname" name="firstname"><br><br>
-                    <label for="lastname">Last Name:</label><br>
-                    <input type="text" id="lastname" name="lastname"><br><br>
-                    <label for="emailaddress">Email Address:</label><br>
-                    <input type="email" id="emailaddress" name="emailaddress"><br><br>
-                    <label for="emailaddress">Confirm Email Address:</label><br>
-                    <input type="email" id="emailaddress" name="emailaddress"><br><br>
-                    <label for="Phonenumber">Phone Number:</label><br>
-                    <input type="tel" id="Phonenumber" name="Phonenumber"><br><br>
-                     <label for="district">District</label><br>
-                        <div class="select">   
-                            <select id="district">
-                                <option value="Select District">Select District</option>
-                                <option value="aberdeen">Aberdeen</option>
-                                <option value="aa">Aberdeeb Airport</option>
-                                <option value="altens">Altens</option>
-                                <option value="aie">Altens Industrial Estate</option>
-                                <option value="bankhead">Bankhead</option>
-                                <option value="bieldside">Bieldside</option>
-                                <option value="bod">Bridge of Dee</option>
-                                <option value="bod">Bridge of Don</option>
-                                <option value="bodie">Bridge of Don Industrial Estate</option>
-                                <option value="bucksburn">Bucksburn</option>
-                                <option value="cove">Cove</option>
-                                <option value="covebay">Cove Bay</option>
-                                <option value="craibstone">Craibstone</option>
-                                <option value="craigiebuckler">Craigiebuckler</option>
-                                <option value="cults">Cults</option>
-                                <option value="danestone">Danestone</option>
-                                <option value="dyce">Dyce</option>
-                                <option value="etie">East Tullos Industrial Estate</option>
-                                <option value="gbp">Gateway Business Park</option>
-                                <option value="grandholm">Grandholm</option>
-                                <option value="hazlehead">Hazlehead</option>
-                                <option value="kingswells">Kingswells</option>
-                                <option value="kie">Kirkhill Industrial Estate</option>
-                                <option value="milltimber">Milltimber</option>
-                                <option value="nv">Newtondee Village</option>
-                                <option value="nigg">Nigg</option>
-                                <option value="oa">Old Aberdeen</option>
-                                <option value="persley">Persley</option>
-                                <option value="peterculter">Peterculter</option>
-                                <option value="pitfodels">Pitfodels</option>
-                                <option value="pie">Pitmedden Industrial Estate</option>
-                                <option value="pfdp">Prime Four Business Park</option>
-                                <option value="stoneywood">Stoneywood</option>
-                                <option value="torry">Torrey</option>
-                                <option value="ua">Upper Anguston</option>
-                                <option value="wie">Wellheads Industrial Estate</option>
-                                <option value="wtie">West Tullos Industrial Estate</option>
-                                <option value="woodside">Woodside</option>
-                            </select>
-                        </div><br><br>
-                    <label for="Postcode">Post Code:</label><br>
-                    <input type="text" id="Postcode" name="Postcode"><br><br>
-                    <input type="submit" value="Submit">
-                </form> 
+                    <div>
+                        <label for="firstName">First name</label>
+                        <input type="text" name="firstName" id="firstName" required="Required">
+                        <br>
+                        <label for="lastName">Last name</label>
+                        <input type="text" name="lastName" id="lastName" required="Required">
+                        <br>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" required="Required">
+                        <br>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required="Required">
+                        <br>
+                        <label for="postCode">Post code</label>
+                        <input type="text" name="postCode" id="postCode" required="Required">
+                        <br>
+                        <label for="contactNumber">Contact number</label>
+                        <input type="text" name="contactNumber" id="contactNumber" required="Required">
+                        <br>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                
         </main>
         <!--START OF FOOTER-->
         <footer>
