@@ -168,6 +168,10 @@ main {
 }
 footer {
     background-color: blue;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 5px;
 }
 aside p,h3,h4 {
     color: darkred;
