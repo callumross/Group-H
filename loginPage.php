@@ -21,10 +21,8 @@
         <div id="quicklinks">
             <ul>
                 <li><a href="Index.html">Home</a></li>
-                <li><a href="#">Donate&Receive</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Suggestions</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="DonateandReceive.html">Donate&Receive</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="loginPage.php">Login page</a></li>
                 <li><a href="signup.html">Sign up page</a></li>
             </ul>
