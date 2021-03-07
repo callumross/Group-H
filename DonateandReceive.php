@@ -1,3 +1,8 @@
+<?php
+session_start();
+$username = $_SESSION["username"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -29,7 +34,7 @@
             <h2>Details of your Danation</h3>
 
                 <!--Sign up form-->
-                <form action="#" method="POST">
+                <form action="addListing.php" method="POST">
                     <div>
                         <label for="listingName">Name of Item to Donate</label><br>
                         <input type="text" name="listingName" id="listingName" required="Required">
@@ -40,8 +45,11 @@
                         <label for="listingDescription">Brief Description of the item</label><br>
                         <input type="text" name="listingDescription" id="listingDescription" required="Required">
                         <br>
-                        <label for="goodOrService">Item type (Goods/Service)</label><br>
-                        <input type="text" name="goodOrService" id="goodOrService" required="Required">
+                        <p>Good or Service</p>
+                        <label for="good">Good</label>
+                        <input type="radio" name="goodOrService" id="good">
+                        <label for="service">Service</label>
+                        <input type="radio" name="goodOrService" id="service">
                         <br>
                         <label for="postCode">Post code</label><br>
                         <input type="text" name="postCode" id="postCode" required="Required">

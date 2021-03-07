@@ -1,4 +1,5 @@
 <?php
+include("connection.php");
 // Start the session
 session_start();
 //If theres no post array then the form hasn't been submitted
@@ -15,41 +16,27 @@ if(!IsSet($_POST["username"]) || !IsSet($_POST["password"])){
     //End session and redirect to loginPage
     session_destroy();
     header("Location: loginPage.php");
-    exit();
-}
-
-/* All username and password combinations are stored in a seperate
-    php file, require_once is used as the file is only needed one time. */
-require_once "userAccounts.php";
-
-// Declare functions
-/* This function returns true if the username has an associated passwordf
-    in file loginAccounts.php */
-function checkLogin($username, $password)
-{
-    // Declare loginAccounts as a global variable
-    global $userAccounts;
     
-    // if entered username does not have a associated password, return false
-   if(!isset($userAccounts[$username])){
-       return(false);
-   } 
-   // Else their must be a password
-   return($password==$userAccounts[$username]);
 }
 
 // Set username and password variables to that from html form
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-// If the function returns true then we end the php script and go to homePage
-if(checkLogin($username,$password)){
-    $_SESSION["username"]=$username;
-    header("Location: homePage.php");
-    exit();
+// SQL Query
+$sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+
+// Result from query
+$result = mysqli_query($db,$sql);
+
+// Check we only have one row back from query on table
+if(mysqli_num_rows($result) ==1){
+    session_start();
+    $_SESSION['username'] = $username;
+    header("Location: try.html");
 }
 
-// Else if the function returns false we redirect to login page
+// If theres no rows or more than 1 we direct back to index page
 session_destroy();
-header("Location: loginPage.php");
+header("Location: Index.html");
 ?> 
