@@ -31,7 +31,7 @@ $username = $_SESSION["username"];
             </form>
         </header>
         <main>
-            <h2>Details of your Danation</h3>
+            <h2>Details of your Donation</h3>
 
                 <!--Sign up form-->
                 <form action="addListing.php" method="POST">
