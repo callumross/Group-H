@@ -27,6 +27,6 @@ if(!isSet($_POST)){
     // Save the username in a session variable so the system knows the user is logged in
     session_start();
     $_SESSION["username"] = $username;
-    header("Location: Index.html");
+    header("Location: index.php");
 }
 ?>

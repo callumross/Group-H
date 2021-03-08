@@ -1,8 +1,18 @@
+<?php
+session_start();
+$username = $_SESSION["username"];
+?>
 <!DOCTYPE html>
 <html lang="en-uk">
     <head>
         <meta charset="utf-8">
-        <img id="logo" src="assets/images/logo.JPG" alt="MAKE SOMEONE SMILE"/>
+        <title>HELP A SOUL Homepage</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css">
+    </head>
+    <body>
+<nav>
+<img id="logo" src="assets/images/logo.JPG" alt="MAKE SOMEONE SMILE"/>
         <div id="quicklinks">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -10,14 +20,11 @@
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="loginPage.php">Login page</a></li>
                 <li><a href="signup.html">Sign up page</a></li>
+                <li><a href="logout.php">Log out</a></li>
             </ul>
         </div> 
         <img id="banner" src="assets/images/banner.JPG" alt="BANNER"/>
-        <title>HELP A SOUL Homepage</title>
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css">
-    </head>
-    <body>
+</nav>
         <!--START OF HEADER-->
         <header>
             <h2>Serach for service</h2>

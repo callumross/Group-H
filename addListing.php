@@ -1,13 +1,21 @@
 <?php
+session_start();
 // Connect to the database
 include("connection.php");
 
 //Check if a post request has been sent
 if(!isset($_POST)){
     echo "Error";
-    header("Location: Index.html");
+    header("Location: index.php");
     die();
 } else {
+    //Get user id to add to the listing table
+    $username = $_SESSION["username"];
+    $sql = "SELECT * FROM users WHERE username = '$username'";
+    $result = $db->query($sql);
+    $row = $result->fetch_array();
+    $userID = $row["userID"];
+
     // Save all the POST values into variables
     $listingName = $_POST["listingName"];
     $listingLocation = $_POST["listingLocation"];
@@ -16,16 +24,17 @@ if(!isset($_POST)){
     $listingPostcode = $_POST["postCode"];
 
     // Run the sql query
-    $sql_query = "INSERT INTO listings (listingName,listingLocation,listingDescription,goodOrService,listingPostcode) VALUES ('$listingName','$listingLocation','$listingDescription','$goodOrService','$listingPostcode')";
+    $sql_query = "INSERT INTO listings (listingName,listingLocation,listingDescription,goodOrService,listingPostcode,userID) VALUES ('$listingName','$listingLocation','$listingDescription','$goodOrService','$listingPostcode','$userID')";
 
     // Error check
     if(mysqli_query($db,$sql_query)){
-        // Do nothing
+        // If succesful, redirect to index page
+        header("Location: index.php");
+        exit();
     } else {
+        // If no succesful display error
         echo "Error";
     }
 
-    // Save username in session variable and redirect
-    header("Location: Index.html");
 }
 ?>
