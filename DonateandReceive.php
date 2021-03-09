@@ -49,9 +49,9 @@ session_start();
                         <br>
                         <p>Good or Service</p>
                         <label for="good">Good</label>
-                        <input type="radio" name="goodOrService" id="good">
+                        <input type="radio" name="goodOrService" id="good" value="good">
                         <label for="service">Service</label>
-                        <input type="radio" name="goodOrService" id="service">
+                        <input type="radio" name="goodOrService" id="service" value="service">
                         <br>
                         <label for="postCode">Post code</label><br>
                         <input type="text" name="postCode" id="postCode" required="Required">

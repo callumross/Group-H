@@ -13,4 +13,4 @@ if($db->connect_error){
     die("Connection error: " . $db->connect_error);
 }
 // Commented out once it shows database is connected
-echo "Success";
+//echo "Success";

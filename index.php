@@ -21,6 +21,7 @@ $username = $_SESSION["username"];
                 <li><a href="loginPage.php">Login page</a></li>
                 <li><a href="signup.html">Sign up page</a></li>
                 <li><a href="logout.php">Log out</a></li>
+                <li><a href="displayListing.php">Listings</a></li>
             </ul>
         </div> 
         <img id="banner" src="assets/images/banner.JPG" alt="BANNER"/>
