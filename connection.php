@@ -1,8 +1,8 @@
 <?php
 // Variables to hold database information
 $servername = "localhost";
-$dbname = "groupH";
-$password = "root";
+$dbname = "group h";
+$password ="" ;
 $username ="root";
 
 // Connect to database
