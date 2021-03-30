@@ -41,8 +41,10 @@
         $listingDescription = $row["listingDescription"];
         $goodOrService = $row["goodOrService"];
         $listingPostcode = $row["listingPostcode"];
+        $listingID = $row["listingID"];
         //Echo the results
         echo " <hr>
+                    <p> Listing ID = {$listingID}</p>
                     <p>Name ={$listingName}</p>
                     <p>Good or Service ={$goodOrService}</p>
                     <p>Description ={$listingDescription}</p>
