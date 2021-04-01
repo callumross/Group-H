@@ -27,7 +27,7 @@ session_start();
 </nav>
         <header>
             <h2>Search for service</h2>
-            <form action="searchListings.php" method="POST">
+            <form action="" method="POST">
                 <input type="text" name="location" placeholder="Aberdeen"/>
                 <input type="submit" value="Search">
             </form>
@@ -36,11 +36,25 @@ session_start();
             <h2>Display of Listings</h3>
 
                 <!--display list-->
-                <?php
+<?php
+$location = $_POST['location'];
+searchLocation($location);
+?>
+        </main>
+        <!--START OF FOOTER-->
+        <footer>
+            <p>(C) 2021 Group H CMM 004 RGU</p>
+        </footer>
+        <!--END OF FOOTER-->
+</body>
+</html>
+
+<?php
+    function searchLocation($location){
     // Connect to database
     include("connection.php");
     // Sql query
-    $sql = "SELECT * FROM listings WHERE 1";
+    $sql = "SELECT * FROM listings WHERE listingLocation LIKE '$location'";
     //Get the result
     $result = $db->query($sql);
     //Fetch the associative array
@@ -63,12 +77,5 @@ session_start();
                     <p><a href='try.html'>Interested?</a></p>
                     <hr>";                    
     }
+}
     ?>
-        </main>
-        <!--START OF FOOTER-->
-        <footer>
-            <p>(C) 2021 Group H CMM 004 RGU</p>
-        </footer>
-        <!--END OF FOOTER-->
-</body>
-</html>
