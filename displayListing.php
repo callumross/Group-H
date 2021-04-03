@@ -70,5 +70,6 @@ session_start();
             <p>(C) 2021 Group H CMM 004 RGU</p>
         </footer>
         <!--END OF FOOTER-->
+        
 </body>
 </html>

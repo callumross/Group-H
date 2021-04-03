@@ -23,6 +23,7 @@ if(!isset($_POST)){
     $goodOrService = $_POST["goodOrService"];
     $listingPostcode = $_POST["postCode"];
 
+    
     // Run the sql query
     $sql_query = "INSERT INTO listings (listingName,listingLocation,listingDescription,goodOrService,listingPostcode,userID) VALUES ('$listingName','$listingLocation','$listingDescription','$goodOrService','$listingPostcode','$userID')";
 

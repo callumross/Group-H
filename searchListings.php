@@ -10,6 +10,7 @@ session_start();
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css">
     </head>
+    
 <body>
 <nav>
 <img id="logo" src="assets/images/logo.JPG" alt="MAKE SOMEONE SMILE"/>
