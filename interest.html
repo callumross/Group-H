@@ -23,7 +23,7 @@
         <img id="banner" src="assets/images/banner.JPG" alt="BANNER"/>
 </nav>
         <header>
-            <h2>Serach for service</h2>
+            <h2>Search for service</h2>
             <form>
                 <input type="text" name="Keywordbox" value="Enter Key words"/>
                 <input type="submit" value="Search">
@@ -33,25 +33,25 @@
             <h2>Detail of the Item of interest</h3>
 
                 <!--interest form-->
-                <form action="indicateinterest.php" method="POST">
+                <form action="addinterest.php" method="POST">
                     <div>
                         <label for="listingid">ID of Item of interest</label><br>
-                        <input type="text" name="listingid" id="listingid" required="Required">
+                        <input type="text" name="listingID" id="listingid" required="Required">
                         <br>
                         <label for="listingname">Name of Item of interest</label><br>
-                        <input type="text" name="listingname" id="listingname" required="Required">
+                        <input type="text" name="listingName" id="listingname" required="Required">
                         <br>
                         <label for="username">Username</label><br>
                         <input type="text" name="username" id="username" required="Required">
-                        <br>
-                        <label for="password">Password</label><br>
-                        <input type="password" name="password" id="password" required="Required">
                         <br>
                         <p>Good or Service</p>
                         <label for="good">Good</label>
                         <input type="radio" name="goodOrService" id="good" value="good">
                         <label for="service">Service</label>
                         <input type="radio" name="goodOrService" id="service" value="service">
+                        <br>
+                        <label for="location">My Location</label><br>
+                        <input type="text" name="location" id="location" required="Required">
                         <br>
                         <label for="postCode">My Post Code</label><br>
                         <input type="text" name="postCode" id="postCode" required="Required">

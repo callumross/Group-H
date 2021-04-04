@@ -16,8 +16,8 @@ session_start();
         <div id="quicklinks">
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="#">Listings</a></li>
-                <li><a href="displayInterest.php">Interest</a></li>
+                <li><a href="displayListing.php">listings</a></li>
+                <li><a href="">Interest</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="loginPage.php">Login page</a></li>
                 <li><a href="signup.html">Sign up page</a></li>
@@ -28,40 +28,39 @@ session_start();
 </nav>
         <header>
             <h2>Search for service</h2>
-            <form action="searchListings.php" method="POST">
+            <form action="searchinterest.php" method="POST">
                 <input type="text" name="location" placeholder="Aberdeen"/>
                 <input type="submit" value="Search">
             </form>
         </header>
         <main>
-            <h2>Display of Listings</h3>
+            <h2>Display of Interest</h3>
 
                 <!--display list-->
                 <?php
     // Connect to database
     include("connection.php");
     // Sql query
-    $sql = "SELECT * FROM listings WHERE 1";
+    $sql = "SELECT * FROM interest WHERE 1";
     //Get the result
     $result = $db->query($sql);
     //Fetch the associative array
     while($row = $result->fetch_array()){
         // Save variables from array
-        $listingName = $row["listingName"];
-        $listingLocation = $row["listingLocation"];
-        $listingDescription = $row["listingDescription"];
-        $goodOrService = $row["goodOrService"];
-        $listingPostcode = $row["listingPostcode"];
         $listingID = $row["listingID"];
+        $listingName = $row["listingName"];
+        $username = $row["username"];
+        $goodOrService = $row["goodOrService"];
+        $listingLocation = $row["listingLocation"];
+        $listingPostcode = $row["listingPostcode"];
         //Echo the results
         echo " <hr>
                     <p> Listing ID = {$listingID}</p>
                     <p>Name ={$listingName}</p>
+                    <p>username ={$username}</p>
                     <p>Good or Service ={$goodOrService}</p>
-                    <p>Description ={$listingDescription}</p>
                     <p>Location ={$listingLocation}</p>
                     <p>Postcode ={$listingPostcode}</p><br>
-                    <p><a href='interest.html'>Interested?</a></p>
                     <hr>";                    
     }
     ?>
