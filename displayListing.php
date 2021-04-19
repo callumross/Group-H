@@ -16,7 +16,12 @@ session_start();
         <div id="quicklinks">
             <ul>
                 <li><a href="home.php">Home</a></li>
+<<<<<<< HEAD
                 <li><a href="displayListing.php">Listings</a></li>
+=======
+                <li><a href="#">Listings</a></li>
+                <li><a href="displayInterest.php">Interest</a></li>
+>>>>>>> 2a6261bb35b73b2abf735192302df2bacc1afcde
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="logout.php">Log out</a></li>
             </ul>

@@ -16,16 +16,12 @@ $username = $_SESSION["username"];
         <img id="logo" src="assets/images/logo.JPG" alt="MAKE SOMEONE SMILE"/>
                 <div id="quicklinks">
                     <ul>
-<<<<<<< HEAD
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="loginPage.php">Donate&Receive</a></li>
-                        <li><a href="loginPage.php">Listings</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-=======
                         <li><a href="#">Home</a></li>
->>>>>>> 2a6261bb35b73b2abf735192302df2bacc1afcde
-                        <li><a href="loginPage.php">Login page</a></li>
-                        <li><a href="signup.html">Sign up page</a></li>
+                        <li><a href="DonateandReceive.php">Donate&Receive</a></li>
+                        <li><a href="displayListing.php">Listings</a></li>
+                        <li><a href="displayInterest.php">Interest</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="logout.php">Log out</a></li>
                     </ul>
                 </div> 
                 <img id="banner" src="assets/images/banner.JPG" alt="BANNER"/>
