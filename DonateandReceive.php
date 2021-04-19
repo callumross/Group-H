@@ -16,7 +16,7 @@ session_start();
 <img id="logo" src="assets/images/logo.JPG" alt="MAKE SOMEONE SMILE"/>
         <div id="quicklinks">
             <ul>
-                <li><a href="index.php">Home</a></li>
+                <li><a href="home.php">Home</a></li>
                 <li><a href="#">Donate&Receive</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="loginPage.php">Login page</a></li>

@@ -4,7 +4,7 @@
     if(IsSet($_SESSION["username"]))
     {
         // If username is set redirect to homepage
-        header("Location: index.php");
+        header("Location: home.php");
         exit();
     }
 

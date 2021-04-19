@@ -17,8 +17,11 @@ $username = $_SESSION["username"];
                 <div id="quicklinks">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="loginPage.php">Login page</a></li>
-                        <li><a href="signup.html">Sign up page</a></li>
+                        <li><a href="DonateandReceive.php">Donate&Receive</a></li>
+                        <li><a href="displayListing.php">Listings</a></li>
+                        <li><a href="displayInterest.php">Interest</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="logout.php">Log out</a></li>
                     </ul>
                 </div> 
                 <img id="banner" src="assets/images/banner.JPG" alt="BANNER"/>
