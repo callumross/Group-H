@@ -16,7 +16,7 @@ $username = $_SESSION["username"];
         <img id="logo" src="assets/images/logo.JPG" alt="MAKE SOMEONE SMILE"/>
                 <div id="quicklinks">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="home.php">Home</a></li>
                         <li><a href="DonateandReceive.php">Donate&Receive</a></li>
                         <li><a href="displayListing.php">Listings</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
