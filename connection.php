@@ -1,7 +1,7 @@
 <?php
 // Variables to hold database information
 $servername = "localhost";
-$dbname = "groupH";
+$dbname = "grouph";
 $password ="" ;
 $username ="root";
 
