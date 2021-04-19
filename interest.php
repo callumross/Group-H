@@ -4,20 +4,20 @@ include("connection.php");
 // If a post request has not been submitted then redirect
 if(!isSet($_POST)){
     echo "Error";
-    header("Location: Index.html");
+    header("Location: interest.html");
     die();
 } else {
     // Save all the POST values into variables
-    $firstName = $_POST["firstName"];
-    $lastName = $_POST["lastName"];
+    $listingID = $_POST["listingID"];
+    $listingName = $_POST["listingName"];
     $username = $_POST["username"];
-    $password = $_POST["password"];
-    $email = $_POST["email"];
-    $postCode = $_POST["postCode"];
-    $contactNumber = $_POST["contactNumber"];
+    $goodOrService = $_POST["goodOrService"];
+    $listingLocation = $_POST["listingLocation"];
+    $listingpostCode = $_POST["listingpostCode"];
+    $userID = $_POST["userID"];
     
     // Run sql query to add information to database
-    $sql_query = "INSERT INTO users (firstName,lastName,username,password,email,postCode,contactNumber) VALUES ('$firstName','$lastName','$username','$password','$email','$postCode','$contactNumber')";
+    $sql_query = "INSERT INTO interest (listingID,listingName,username,goodOrService,listingLocation,listingpostCode,userID) VALUES ('$listingID','$listingName','$username','$goodOrService','$listingLocation','$listingPostCode','$userID')";
 
     // If the query is succesfull nothing happens, else echo an error message
     if(mysqli_query($db,$sql_query)){
@@ -27,6 +27,6 @@ if(!isSet($_POST)){
     // Save the username in a session variable so the system knows the user is logged in
     session_start();
     $_SESSION["username"] = $username;
-    header("Location: home.php");
+    header("Location: displayListing.php");
 }
 ?>

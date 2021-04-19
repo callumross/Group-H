@@ -12,6 +12,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <div id="quicklinks">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="DonateandReceive.php">Donate&Receive</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div> 
         <img id="banner" src="assets/images/banner.JPG" alt="BANNER"/>
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css">
@@ -19,21 +26,11 @@
 <body>
 <nav>
 <img id="logo" src="assets/images/logo.JPG" alt="MAKE SOMEONE SMILE"/>
-        <div id="quicklinks">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="DonateandReceive.php">Donate&Receive</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="loginPage.php">Login page</a></li>
-                <li><a href="signup.html">Sign up page</a></li>
-                <li><a href="logout.php">Log out</a></li>
-            </ul>
-        </div> 
 </nav>  
     <header><h1 style="color:black;">Welcome to the SwapApp</h1>
         <h2>Search for service</h2>
             <form action="searchListings.php" method="POST">
-                <input type="text" name="location" placeholder="Aberdeen"/>
+                <input type="text" name="Goods/Services" placeholder=""/>
                 <input type="submit" value="Search">
             </form>     
 </header>
@@ -46,7 +43,10 @@
         <div>
             <label for="password">Password</label>
             <input type="password" name="password" id="password" require="Required">
+            <br>
+            <span class="psw"><a href="signup.html">Create account?</a> Forgot <a href="#">password?</a></span>
         </div>
+        <br>
         <div>
             <button type="submit">Log in</button>
         </div>

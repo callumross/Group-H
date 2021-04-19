@@ -31,7 +31,7 @@ if(mysqli_num_rows($result) == 1){
     // Start session and save username to session array
     session_start();
     $_SESSION['username'] = $username;
-    header("Location: index.php");
+    header("Location: home.php");
     exit();
 } else {
     // If theres no row or more than one row echo error message
