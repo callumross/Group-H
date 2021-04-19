@@ -27,9 +27,9 @@ session_start();
         <img id="banner" src="assets/images/banner.JPG" alt="BANNER"/>
 </nav>
         <header>
-            <h2>Serach for service</h2>
-            <form>
-                <input type="text" name="Keywordbox" value="Enter Key words"/>
+        <h2>Search for service</h2>
+            <form action="searchListings.php" method="POST">
+                <input type="text" name="location" placeholder="Aberdeen"/>
                 <input type="submit" value="Search">
             </form>
         </header>

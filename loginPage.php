@@ -30,7 +30,13 @@
             </ul>
         </div> 
 </nav>  
-    <header><h1 style="color:black;">Welcome to the SwapApp</h1></header>
+    <header><h1 style="color:black;">Welcome to the SwapApp</h1>
+        <h2>Search for service</h2>
+            <form action="searchListings.php" method="POST">
+                <input type="text" name="location" placeholder="Aberdeen"/>
+                <input type="submit" value="Search">
+            </form>     
+</header>
 
     <form action="loginCheck.php" method="POST" id="login">
         <div>
